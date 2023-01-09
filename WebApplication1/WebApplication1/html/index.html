@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+</head>
+<body>
+    <input class="n" type="text" placeholder="n" />
+    <input class="k" type="text" placeholder="k" />
+    <button class="soch">Узнать</button>
+    <br />
+    <br />
+    <br />
+    <input class="x1" type="text" placeholder="x1" />
+    <input class="y1" type="text" placeholder="y1" />
+    <input class="x2" type="text" placeholder="x2" />
+    <input class="y2" type="text" placeholder="y2" />
+    <button class="slon">Узнать</button>
+
+    <script>
+
+        let x1 = document.querySelector(".x1")
+        let y1 = document.querySelector(".y1")
+        let x2 = document.querySelector(".x2")
+        let y2 = document.querySelector(".y2")
+        let slonBtn = document.querySelector(".slon")
+
+        slonBtn.addEventListener("click", () => {
+            window.location.href = "slon/" + x1.value + "/" + y1.value + "/" + x2.value + "/" + y2.value
+        })
+
+        let n = document.querySelector(".n")
+        let k = document.querySelector(".k")
+        let sochBtn = document.querySelector(".soch")
+        sochBtn.addEventListener("click", () => {
+            window.location.href = "combination/" + n.value + "/" + k.value
+        })
+
+    </script>
+</body>
+</html>
